@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">  <!-- Links the style sheet to this html-->
+
+</head>
+<body>
+    <h1>Easy Eats</h1><br>
+    
+<img src="burgerImg.jpg" class="picture" alt="">
+<label for="button" >Burger</label>
+<button id="burgerButton">Add to cart</button>
+<br>
+
+<img src="friesImg.jpg"class="picture"  alt="">
+
+<label for="friesButton">Fries</label>
+<button id="friesButton">Add to cart</button>
+<br>
+
+<img src="pepsiImg.png" class="picture" alt="">
+
+<label for="pepsiButton">Pepsi</label>
+<button id="pepsiButton">Add to cart</button>
+<br>
+<label for="cartname">Cart</label>
+<textarea name="cartname" id="cart" cols="30" rows="10" readonly></textarea>
+
+<label for="myTotal">Total</label>
+<textarea name="total" id="total" cols="30" rows="10" readonly></textarea>
+
+<div id='#paypal-button-container'></div>
+
+
+<br>
+
+
+<button type="Submit" onclick="downloadFile()" id="mySubmit">Place your order</button>
+
+<p id="subResult"></p>
+
+<p id="paymentResult"></p>
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&components=buttons"></script>
+    <script src="index.js"></script>  <!-- Links the javascript sheet to this html-->
+</body>
+</html>
